@@ -76,15 +76,17 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.08rem;
+  font-size: 1.4rem;
   font-weight: 950;
 }
 
-.brand-logo {
-  width: 42px;
-  aspect-ratio: 1;
-  border-radius: 8px;
-  box-shadow: 0 7px 18px rgba(23, 23, 23, 0.16);
+..brand-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 7px 18px rgba(23, 23, 23, 0.16);
+}
 }
 
 .site-nav {
