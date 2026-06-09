@@ -159,8 +159,7 @@ textarea {
     ccolor: #222222;
     opacity: 1;
 }
-}
-}
+
 
 .hero-text {
     max-width: 690px;
@@ -169,7 +168,7 @@ textarea {
     font-size: 1.2rem;
     font-weight: 500;
 }
-}
+
 
 .search-box {
   display: grid;
