@@ -146,7 +146,7 @@ textarea {
 
 .eyebrow {
   margin: 0 0 12px;
-  color: var(--accent-dark);
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 950;
   letter-spacing: 0.08em;
