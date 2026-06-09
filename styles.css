@@ -46,7 +46,7 @@ textarea {
   display: flex;
   justify-content: center;
   gap: 18px;
-  padding: 9px 16px;
+  padding: 12px 16px;
   background: var(--ink);
   color: #fffdf8;
   font-size: 0.88rem;
@@ -64,10 +64,10 @@ textarea {
   gap: 18px;
   width: min(1160px, calc(100% - 32px));
   margin: 14px auto 0;
-  padding: 12px 14px;
+  padding: 16px 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.92);
+  background: rgba(255, 253, 248, 0.95);
   box-shadow: 0 10px 28px rgba(31, 28, 24, 0.08);
   backdrop-filter: blur(16px);
 }
@@ -75,33 +75,34 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.4rem;
+  gap: 12px;
+  font-size: 1.5rem;
   font-weight: 950;
   color: var(--ink);
+  text-decoration: none;
 }
 
 .brand-logo {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 7px 18px rgba(23, 23, 23, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(23, 23, 23, 0.2);
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
 .site-nav a {
-  padding: 9px 11px;
-  border-radius: 7px;
+  padding: 10px 14px;
+  border-radius: 8px;
   color: var(--muted);
-  font-size: 0.93rem;
+  font-size: 0.95rem;
   font-weight: 800;
-  transition: all 200ms ease;
+  transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .site-nav a:hover {
@@ -111,7 +112,7 @@ textarea {
 
 .menu-button {
   display: none;
-  width: 42px;
+  width: 44px;
   aspect-ratio: 1;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -139,17 +140,17 @@ textarea {
   gap: clamp(28px, 5vw, 64px);
   align-items: center;
   width: min(1160px, calc(100% - 32px));
-  min-height: calc(100vh - 134px);
+  min-height: calc(100vh - 180px);
   margin: 0 auto;
-  padding: 48px 0 30px;
+  padding: 60px 0 40px;
 }
 
 .eyebrow {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   color: var(--accent-dark);
   font-size: 0.78rem;
   font-weight: 950;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -157,46 +158,48 @@ textarea {
 .section h2,
 .contact-band h2 {
   margin: 0;
-  line-height: 1.04;
-  letter-spacing: 0;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .hero h1 {
-    max-width: 740px;
-    font-size: clamp(2.6rem, 6vw, 5rem);
-    color: #0a0a0a;
+    max-width: 760px;
+    font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+    color: #000000 !important;
     font-weight: 950;
     opacity: 1;
+    text-rendering: optimizeLegibility;
 }
 
 .hero-text {
-    max-width: 690px;
-    margin: 22px 0 0;
-    color: #333333;
-    font-size: 1.1rem;
+    max-width: 720px;
+    margin: 24px 0 0;
+    color: #1a1a1a !important;
+    font-size: 1.15rem;
     font-weight: 600;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 .search-box {
   display: grid;
   grid-template-columns: 1fr auto;
-  max-width: 680px;
-  margin-top: 28px;
+  max-width: 720px;
+  margin-top: 32px;
   padding: 6px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--surface);
-  box-shadow: 0 16px 36px rgba(31, 28, 24, 0.09);
+  box-shadow: 0 16px 40px rgba(31, 28, 24, 0.1);
 }
 
 .search-box input {
   min-width: 0;
   border: 0;
-  padding: 13px 14px;
+  padding: 14px 16px;
   background: transparent;
   color: var(--ink);
   outline: none;
+  font-size: 1rem;
 }
 
 .search-box input::placeholder {
@@ -208,13 +211,14 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  padding: 12px 18px;
+  min-height: 48px;
+  padding: 13px 20px;
   border: 1px solid transparent;
   border-radius: 8px;
   font-weight: 900;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: all 200ms ease;
+  transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .search-box button,
@@ -226,8 +230,8 @@ textarea {
 .search-box button:hover,
 .button.primary:hover {
   background: var(--accent-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(12, 124, 121, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(12, 124, 121, 0.3);
 }
 
 .button.secondary {
@@ -238,19 +242,20 @@ textarea {
 
 .button.secondary:hover {
   background: #ebe4d9;
+  border-color: var(--accent);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 22px;
+  gap: 14px;
+  margin-top: 28px;
 }
 
 .shop-window {
-  padding: 18px;
+  padding: 22px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -258,14 +263,14 @@ textarea {
 .window-head {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .window-head img {
-  width: 76px;
-  border-radius: 18px;
+  width: 80px;
+  border-radius: 12px;
   transform: perspective(700px) rotateX(8deg) rotateY(-13deg);
-  filter: drop-shadow(0 13px 18px rgba(23, 23, 23, 0.18));
+  filter: drop-shadow(0 14px 22px rgba(23, 23, 23, 0.2));
 }
 
 .window-head strong,
@@ -274,37 +279,40 @@ textarea {
 }
 
 .window-head strong {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: var(--ink);
+  margin-bottom: 4px;
 }
 
 .window-head span {
   color: var(--muted);
   font-weight: 750;
+  font-size: 0.95rem;
 }
 
 .shelf {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-top: 22px;
-  padding: 20px;
-  border-radius: 8px;
+  gap: 14px;
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 10px;
   background: #e4f1eb;
 }
 
 .pack {
   position: relative;
   display: block;
-  min-height: 130px;
-  border-radius: 8px;
+  min-height: 140px;
+  border-radius: 10px;
   background: var(--accent);
-  box-shadow: inset 0 -18px 0 rgba(23, 23, 23, 0.08);
-  transition: transform 200ms ease;
+  box-shadow: 0 8px 20px rgba(23, 23, 23, 0.12);
+  transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .pack:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(23, 23, 23, 0.18);
 }
 
 .pack::after {
@@ -315,29 +323,18 @@ textarea {
   top: 30%;
   height: 30%;
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.9);
+  background: rgba(255, 253, 248, 0.95);
 }
 
-.pack.oil {
-  background: var(--sun);
-}
-
-.pack.soap {
-  background: var(--accent);
-}
-
-.pack.food {
-  background: var(--coral);
-}
-
-.pack.footwear {
-  background: var(--green);
-}
+.pack.oil { background: var(--sun); }
+.pack.soap { background: var(--accent); }
+.pack.food { background: var(--coral); }
+.pack.footwear { background: var(--green); }
 
 .deal-card {
   display: grid;
-  gap: 4px;
-  margin-top: 14px;
+  gap: 6px;
+  margin-top: 16px;
   padding: 18px;
   border-radius: 8px;
   background: var(--ink);
@@ -348,6 +345,7 @@ textarea {
   color: var(--sun);
   font-weight: 900;
   text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
 .quick-stats {
@@ -355,114 +353,124 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   width: min(1160px, calc(100% - 32px));
-  margin: 0 auto 34px;
+  margin: 0 auto 40px;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--line);
-  box-shadow: 0 16px 34px rgba(31, 28, 24, 0.07);
+  box-shadow: 0 16px 36px rgba(31, 28, 24, 0.08);
 }
 
 .quick-stats div {
-  padding: 22px;
+  padding: 28px;
   background: var(--surface);
+  text-align: center;
 }
 
 .quick-stats strong {
   display: block;
   color: var(--accent-dark);
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   line-height: 1;
+  margin-bottom: 8px;
 }
 
 .quick-stats span {
   color: var(--muted);
   font-weight: 800;
+  font-size: 0.95rem;
 }
 
 .category-strip {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   width: min(1160px, calc(100% - 32px));
-  margin: 0 auto 26px;
+  margin: 0 auto 32px;
 }
 
 .category-strip a,
 .product-tag {
   display: inline-flex;
   align-items: center;
-  min-height: 34px;
-  padding: 7px 11px;
-  border: 1px solid var(--line);
+  min-height: 36px;
+  padding: 8px 13px;
+  border: 1.5px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
   color: var(--ink);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 900;
   box-shadow: 0 8px 22px rgba(31, 28, 24, 0.06);
-  transition: all 200ms ease;
+  transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .category-strip a:hover {
   background: #ebe4d9;
   color: var(--accent-dark);
   border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .section,
 .contact-band {
   width: min(1160px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 76px 0;
+  padding: 80px 0;
 }
 
 .section-heading {
-  max-width: 760px;
+  max-width: 780px;
+  margin-bottom: 40px;
 }
 
 .section h2,
 .contact-band h2 {
-  font-size: clamp(2rem, 4.4vw, 3.7rem);
+  font-size: clamp(2.1rem, 4.6vw, 3.9rem);
   color: var(--ink);
+  margin-bottom: 16px;
 }
 
 .section-heading p:not(.eyebrow),
 .about p,
 .contact-band p {
   color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .catalog-layout {
   display: grid;
-  grid-template-columns: 230px 1fr;
-  gap: 18px;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
   align-items: start;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .filter-panel {
   position: sticky;
-  top: 98px;
+  top: 140px;
   display: grid;
-  gap: 8px;
-  padding: 18px;
+  gap: 10px;
+  padding: 20px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--surface);
   box-shadow: 0 12px 28px rgba(31, 28, 24, 0.06);
 }
 
 .filter-panel h3 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: var(--ink);
+  font-size: 1.1rem;
 }
 
 .filter-panel a {
-  padding: 10px 12px;
+  padding: 11px 13px;
   border-radius: 7px;
   color: var(--muted);
   font-weight: 850;
+  font-size: 0.95rem;
   transition: all 200ms ease;
 }
 
@@ -474,32 +482,33 @@ textarea {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 
 .product-card {
   display: grid;
   align-content: start;
-  min-height: 350px;
-  padding: 16px;
+  min-height: 380px;
+  padding: 18px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--surface);
   box-shadow: 0 12px 30px rgba(31, 28, 24, 0.07);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .product-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(31, 28, 24, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(31, 28, 24, 0.14);
+  border-color: var(--accent);
 }
 
 .product-visual {
   position: relative;
   display: grid;
   place-items: center;
-  height: 142px;
-  border-radius: 8px;
+  height: 150px;
+  border-radius: 10px;
   overflow: hidden;
   background: #e0efe9;
 }
@@ -507,10 +516,10 @@ textarea {
 .product-visual::before {
   content: "";
   position: absolute;
-  inset: 16px 20px;
+  inset: 18px 22px;
   border-radius: 8px;
-  background: rgba(255, 253, 249, 0.85);
-  box-shadow: inset 0 -14px 0 rgba(23, 23, 23, 0.06);
+  background: rgba(255, 253, 249, 0.9);
+  box-shadow: inset 0 -16px 0 rgba(23, 23, 23, 0.07);
 }
 
 .product-visual::after,
@@ -709,42 +718,47 @@ textarea {
 
 .product-tag {
   justify-self: start;
-  min-height: 30px;
-  margin-top: 14px;
-  padding: 5px 10px;
+  min-height: 32px;
+  margin-top: 16px;
+  padding: 6px 12px;
   color: var(--accent-dark);
   background: #e0efe9;
+  font-size: 0.8rem;
 }
 
 .product-card h3 {
-  margin: 14px 0 8px;
-  font-size: 1.16rem;
+  margin: 16px 0 10px;
+  font-size: 1.2rem;
   color: var(--ink);
+  font-weight: 800;
 }
 
 .product-card p {
-  margin: 0 0 15px;
+  margin: 0 0 16px;
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .price-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
   margin-top: auto;
 }
 
 .price-row strong {
   color: var(--accent-dark);
+  font-size: 0.95rem;
 }
 
 .price-row a {
-  padding: 8px 12px;
+  padding: 9px 14px;
   border-radius: 7px;
   background: var(--ink);
   color: #fffdf8;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 900;
   transition: all 200ms ease;
 }
@@ -757,10 +771,10 @@ textarea {
 .offer-band {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 22px;
+  gap: 28px;
   align-items: center;
-  padding: clamp(24px, 5vw, 46px);
-  border-radius: 8px;
+  padding: clamp(28px, 6vw, 50px);
+  border-radius: 12px;
   background: var(--ink);
   color: #fffdf8;
   box-shadow: var(--shadow);
@@ -772,107 +786,116 @@ textarea {
 
 .offer-band p:not(.eyebrow) {
   color: #e9e2d8;
+  font-size: 1.05rem;
 }
 
 .service-panel {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 28px;
+  gap: 32px;
   align-items: start;
 }
 
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 14px;
 }
 
 .steps article {
   display: grid;
-  gap: 12px;
-  min-height: 150px;
-  padding: 20px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  gap: 14px;
+  min-height: 160px;
+  padding: 24px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
   background: var(--surface);
-  transition: all 200ms ease;
+  transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .steps article:hover {
   border-color: var(--accent);
-  box-shadow: 0 8px 20px rgba(12, 124, 121, 0.15);
+  box-shadow: 0 12px 28px rgba(12, 124, 121, 0.18);
+  transform: translateY(-2px);
 }
 
 .steps strong {
   display: grid;
   place-items: center;
-  width: 42px;
+  width: 48px;
   aspect-ratio: 1;
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--accent);
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .steps span {
   color: var(--muted);
   font-weight: 850;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 44px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  gap: 48px;
+  border-top: 2px solid var(--line);
+  border-bottom: 2px solid var(--line);
+  padding: 40px 0;
 }
 
 .about p {
   margin: 0;
-  font-size: 1.08rem;
-  color: #333333;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  line-height: 1.8;
 }
 
 .contact-band {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
-  gap: clamp(24px, 5vw, 70px);
+  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+  gap: clamp(28px, 6vw, 80px);
   align-items: start;
 }
 
 .contact-form {
   display: grid;
-  gap: 14px;
-  padding: 24px;
+  gap: 16px;
+  padding: 28px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
 
 .contact-form label {
   display: grid;
-  gap: 7px;
+  gap: 8px;
   color: var(--muted);
   font-weight: 850;
+  font-size: 0.95rem;
 }
 
 input,
 textarea {
   width: 100%;
-  border: 1px solid var(--line);
+  border: 1.5px solid var(--line);
   border-radius: 8px;
-  padding: 12px 13px;
+  padding: 13px 15px;
   background: #ffffff;
   color: var(--ink);
+  font-size: 1rem;
   transition: all 200ms ease;
 }
 
 input:focus,
 textarea:focus {
   border-color: var(--accent);
-  outline: 3px solid rgba(12, 124, 121, 0.18);
-  box-shadow: 0 0 0 4px rgba(12, 124, 121, 0.08);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(12, 124, 121, 0.1);
+  background: #fafafa;
 }
 
 .form-note {
@@ -880,17 +903,30 @@ textarea:focus {
   margin: 0;
   color: var(--accent-dark);
   font-weight: 850;
+  font-size: 0.9rem;
 }
 
 .site-footer {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  align-items: center;
+  gap: 20px;
   width: min(1160px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 24px 0 38px;
+  padding: 32px 0 48px;
+  border-top: 1px solid var(--line);
   color: var(--muted);
   font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  color: var(--accent-dark);
+  transition: color 200ms ease;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
 }
 
 @media (max-width: 980px) {
@@ -910,16 +946,33 @@ textarea:focus {
   .steps {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .brand-logo {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media (max-width: 760px) {
   .top-bar {
     flex-direction: column;
     gap: 4px;
+    font-size: 0.8rem;
   }
 
   .site-header {
     flex-wrap: wrap;
+    padding: 12px 14px;
+  }
+  
+  .brand {
+    gap: 8px;
+    font-size: 1.3rem;
+  }
+  
+  .brand-logo {
+    width: 60px;
+    height: 60px;
   }
 
   .menu-button {
@@ -941,6 +994,7 @@ textarea:focus {
   .hero {
     min-height: auto;
     padding-top: 40px;
+    padding-bottom: 30px;
   }
 
   .quick-stats,
@@ -953,10 +1007,18 @@ textarea:focus {
 
   .section,
   .contact-band {
-    padding: 54px 0;
+    padding: 60px 0;
   }
 
   .search-box {
+    grid-template-columns: 1fr;
+  }
+  
+  .about {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-panel {
     grid-template-columns: 1fr;
   }
 }
@@ -969,11 +1031,11 @@ textarea:focus {
   .section,
   .contact-band,
   .site-footer {
-    width: min(100% - 22px, 1160px);
+    width: min(100% - 20px, 1160px);
   }
 
   .hero h1 {
-    font-size: 2.42rem;
+    font-size: 2.2rem;
   }
 
   .hero-actions,
