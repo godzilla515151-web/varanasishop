@@ -78,6 +78,7 @@ textarea {
   gap: 10px;
   font-size: 1.4rem;
   font-weight: 950;
+  color: var(--ink);
 }
 
 .brand-logo {
@@ -100,6 +101,7 @@ textarea {
   color: var(--muted);
   font-size: 0.93rem;
   font-weight: 800;
+  transition: all 200ms ease;
 }
 
 .site-nav a:hover {
@@ -114,6 +116,12 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.menu-button:hover {
+  background: #ebe4d9;
 }
 
 .menu-button span {
@@ -122,6 +130,7 @@ textarea {
   height: 2px;
   margin: 4px auto;
   background: var(--ink);
+  transition: all 200ms ease;
 }
 
 .hero {
@@ -155,16 +164,18 @@ textarea {
 .hero h1 {
     max-width: 740px;
     font-size: clamp(2.6rem, 6vw, 5rem);
-    ccolor: #222222;
+    color: #0a0a0a;
+    font-weight: 950;
     opacity: 1;
 }
 
 .hero-text {
     max-width: 690px;
     margin: 22px 0 0;
-    color: #444444;
-    font-size: 1.2rem;
-    font-weight: 500;
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.7;
 }
 
 .search-box {
@@ -188,6 +199,10 @@ textarea {
   outline: none;
 }
 
+.search-box input::placeholder {
+  color: #999999;
+}
+
 .search-box button,
 .button {
   display: inline-flex;
@@ -199,6 +214,7 @@ textarea {
   border-radius: 8px;
   font-weight: 900;
   cursor: pointer;
+  transition: all 200ms ease;
 }
 
 .search-box button,
@@ -210,11 +226,18 @@ textarea {
 .search-box button:hover,
 .button.primary:hover {
   background: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(12, 124, 121, 0.25);
 }
 
 .button.secondary {
   background: var(--surface);
   border-color: var(--line);
+  color: var(--ink);
+}
+
+.button.secondary:hover {
+  background: #ebe4d9;
 }
 
 .hero-actions {
@@ -252,6 +275,7 @@ textarea {
 
 .window-head strong {
   font-size: 1.25rem;
+  color: var(--ink);
 }
 
 .window-head span {
@@ -276,6 +300,11 @@ textarea {
   border-radius: 8px;
   background: var(--accent);
   box-shadow: inset 0 -18px 0 rgba(23, 23, 23, 0.08);
+  transition: transform 200ms ease;
+}
+
+.pack:hover {
+  transform: translateY(-4px);
 }
 
 .pack::after {
@@ -372,6 +401,13 @@ textarea {
   font-size: 0.82rem;
   font-weight: 900;
   box-shadow: 0 8px 22px rgba(31, 28, 24, 0.06);
+  transition: all 200ms ease;
+}
+
+.category-strip a:hover {
+  background: #ebe4d9;
+  color: var(--accent-dark);
+  border-color: var(--accent);
 }
 
 .section,
@@ -388,6 +424,7 @@ textarea {
 .section h2,
 .contact-band h2 {
   font-size: clamp(2rem, 4.4vw, 3.7rem);
+  color: var(--ink);
 }
 
 .section-heading p:not(.eyebrow),
@@ -418,6 +455,7 @@ textarea {
 
 .filter-panel h3 {
   margin: 0 0 8px;
+  color: var(--ink);
 }
 
 .filter-panel a {
@@ -425,6 +463,7 @@ textarea {
   border-radius: 7px;
   color: var(--muted);
   font-weight: 850;
+  transition: all 200ms ease;
 }
 
 .filter-panel a:hover {
@@ -680,6 +719,7 @@ textarea {
 .product-card h3 {
   margin: 14px 0 8px;
   font-size: 1.16rem;
+  color: var(--ink);
 }
 
 .product-card p {
@@ -706,6 +746,12 @@ textarea {
   color: #fffdf8;
   font-size: 0.88rem;
   font-weight: 900;
+  transition: all 200ms ease;
+}
+
+.price-row a:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
 }
 
 .offer-band {
@@ -749,6 +795,12 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
+  transition: all 200ms ease;
+}
+
+.steps article:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(12, 124, 121, 0.15);
 }
 
 .steps strong {
@@ -759,6 +811,7 @@ textarea {
   border-radius: 8px;
   background: var(--accent);
   color: #ffffff;
+  font-size: 1.4rem;
 }
 
 .steps span {
@@ -777,6 +830,7 @@ textarea {
 .about p {
   margin: 0;
   font-size: 1.08rem;
+  color: #333333;
 }
 
 .contact-band {
@@ -811,12 +865,14 @@ textarea {
   padding: 12px 13px;
   background: #ffffff;
   color: var(--ink);
+  transition: all 200ms ease;
 }
 
 input:focus,
 textarea:focus {
   border-color: var(--accent);
   outline: 3px solid rgba(12, 124, 121, 0.18);
+  box-shadow: 0 0 0 4px rgba(12, 124, 121, 0.08);
 }
 
 .form-note {
