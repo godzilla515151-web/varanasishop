@@ -102,12 +102,32 @@ select {
 }
 
 .brand-logo {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: var(--shadow-sm);
   background: rgba(13, 124, 121, 0.05);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--accent-dark);
+}
+
+.brand-tagline {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .site-nav {
@@ -131,6 +151,25 @@ select {
   background: rgba(13, 124, 121, 0.1);
   color: var(--accent-dark);
   transform: translateY(-2px);
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #25D366 0%, #20BA5B 100%);
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: all 200ms ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
 
 .menu-button {
@@ -856,26 +895,39 @@ textarea:focus {
 
 /* ============ FOOTER ============ */
 .site-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 32px 0;
+  padding: 40px 0;
   color: var(--muted);
   font-weight: 600;
   border-top: 2px solid var(--line);
-  flex-wrap: wrap;
 }
 
-.site-footer a {
+.footer-content {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
   color: var(--accent);
   font-weight: 700;
 }
 
-.site-footer a:hover {
-  color: var(--accent-dark);
+.footer-links a:hover {
   text-decoration: underline;
 }
 
@@ -924,6 +976,10 @@ textarea:focus {
   .site-header {
     width: min(100% - 16px, 1200px);
   }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -945,8 +1001,20 @@ textarea:focus {
   }
 
   .brand-logo {
-    width: 42px;
-    height: 42px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.65rem;
+  }
+
+  .whatsapp-btn {
+    display: none;
   }
 
   .menu-button {
@@ -1021,13 +1089,6 @@ textarea:focus {
   .offer-band .button {
     width: 100%;
   }
-
-  .site-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 20px 0;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1083,5 +1144,10 @@ textarea:focus {
 
   .contact-form {
     padding: 20px;
+  }
+
+  .site-footer {
+    gap: 16px;
+    padding: 24px 0;
   }
 }
