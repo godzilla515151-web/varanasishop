@@ -156,7 +156,8 @@ textarea {
 .hero h1 {
     max-width: 740px;
     font-size: clamp(2.6rem, 6vw, 5rem);
-    color: #111111;
+    ccolor: #222222;
+    opacity: 1;
 }
 }
 }
@@ -164,7 +165,7 @@ textarea {
 .hero-text {
     max-width: 690px;
     margin: 22px 0 0;
-    color: #222222;
+    color: #444444;
     font-size: 1.2rem;
     font-weight: 500;
 }
