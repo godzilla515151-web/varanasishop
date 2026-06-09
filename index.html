@@ -301,7 +301,7 @@
         <span>&copy; <span id="year"></span> VaranasiMart | Varanasi Online Store</span>
         <div style="margin-top: 12px; font-size: 0.9rem;">
           <p>📧 Email: godzilla515151@gmail.com</p>
-          <p>📞 Phone: 9453xxxxxx</p>
+          <p>📞 Phone: 916391608068</p>
           <p>📍 Varanasi, Uttar Pradesh</p>
         </div>
       </div>
@@ -309,10 +309,34 @@
         <a href="#home">Home</a>
         <a href="#catalog">Catalog</a>
         <a href="#contact">Contact</a>
-        <a href="https://wa.me/919453xxxxxx" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/9163916068" target="_blank">WhatsApp</a>
       </div>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+    
+<script>
+const sheetURL =
+"https://opensheet.elk.sh/1uaUAyP4UB1A0PdM7kKGaX-9JtFC5CmHdE839nzQXNlU/Sheet1";
+
+fetch(sheetURL)
+  .then(res => res.json())
+  .then(data => {
+    let html = "";
+
+    data.forEach(product => {
+      html += `
+      <div class="product-card">
+        <img src="${product['Photo URL']}" alt="${product['Product Name']}">
+        <h3>${product['Product Name']}</h3>
+        <p>₹${product['Price']}</p>
+        <small>${product['Category']}</small>
+      </div>`;
+    });
+
+    document.getElementById("products").innerHTML = html;
+  });
+</script>
+
+</body>
 </html>
