@@ -423,16 +423,6 @@ select {
   box-shadow: var(--shadow);
 }
 
-.pack::after {
-  content: '';
-  position: absolute;
-  left: 20%;
-  right: 20%;
-  top: 28%;
-  height: 32%;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.85);
-}
 
 .pack.oil { background: linear-gradient(135deg, var(--sun) 0%, #e8a80c 100%); }
 .pack.soap { background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%); }
@@ -1381,4 +1371,26 @@ textarea::placeholder{
 
 .eyebrow::before{
   background:#ff9d00 !important;
+}
+
+.pack{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:10px;
+color:white;
+font-weight:700;
+text-align:center;
+}
+
+.pack span{
+font-size:38px;
+}
+
+.pack p{
+margin:0;
+font-size:14px;
+color:white;
+font-weight:700;
 }
