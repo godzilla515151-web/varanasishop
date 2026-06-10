@@ -1348,3 +1348,24 @@ textarea::placeholder{
   object-fit:cover;
   border-radius:10px;
 }
+
+.section h2,
+.hero h1,
+.contact-band h2,
+.about h2{
+  color:#ffffff !important;
+}
+
+.section-heading p,
+.about p,
+.contact-band p{
+  color:#f3d7aa !important;
+}
+
+.eyebrow{
+  color:#ff9d00 !important;
+}
+
+.eyebrow::before{
+  background:#ff9d00 !important;
+}
