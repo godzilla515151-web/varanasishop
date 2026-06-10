@@ -210,9 +210,14 @@ select {
   margin: 40px auto;
   padding: 60px 32px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(13, 124, 121, 0.08) 0%, rgba(243, 156, 18, 0.05) 100%);
-  box-shadow: var(--shadow-sm);
-}
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+  url("GHAT.jpg");
+
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ box-shadow: var(--shadow-sm);
+ }
 
 .eyebrow {
   margin: 0 0 16px;
