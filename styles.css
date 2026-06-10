@@ -1382,15 +1382,34 @@ gap:10px;
 color:white;
 font-weight:700;
 text-align:center;
+
+transform-style:preserve-3d;
+transform:perspective(1000px) rotateX(8deg);
+
+box-shadow:
+0 10px 20px rgba(0,0,0,0.35),
+0 0 15px rgba(255,140,0,0.35);
+
+transition:all .3s ease;
+}
+
+.pack:hover{
+transform:perspective(1000px) rotateX(0deg) translateY(-10px) scale(1.08);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,0.45),
+0 0 25px rgba(255,140,0,0.6);
 }
 
 .pack span{
-font-size:38px;
+font-size:42px;
+filter:drop-shadow(0 5px 8px rgba(0,0,0,.5));
 }
 
 .pack p{
 margin:0;
-font-size:14px;
-color:white;
-font-weight:700;
+font-size:15px;
+font-weight:800;
+color:#fff;
+text-shadow:0 2px 5px rgba(0,0,0,.5);
 }
