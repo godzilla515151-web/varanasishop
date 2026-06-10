@@ -117,3 +117,23 @@ fetch(sheetURL)
     `).join("");
   })
   .catch(err => console.log(err));
+  document.querySelector(".contact-form").addEventListener("submit", function(e){
+e.preventDefault();
+
+let name = document.querySelector('[name="name"]').value;
+let contact = document.querySelector('[name="contact"]').value;
+let message = document.querySelector('[name="message"]').value;
+
+let text = `*New Order Inquiry*
+
+Name: ${name}
+Contact: ${contact}
+
+Order Details:
+${message}`;
+
+window.open(
+'https://wa.me/91916391608068?text=' + encodeURIComponent(text),
+'_blank'
+);
+});
