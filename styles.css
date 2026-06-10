@@ -1154,21 +1154,21 @@ textarea:focus {
 
 #products{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
   gap:20px;
+  margin-top:30px;
 }
 
-.product-card{
-  border:1px solid #ddd;
+#products .product-card{
+  background:#fff;
   padding:15px;
   border-radius:12px;
   text-align:center;
-  background:#fff;
 }
 
-.product-card img{
+#products .product-card img{
   width:100%;
-  height:200px;
+  height:220px;
   object-fit:cover;
   border-radius:10px;
 }
