@@ -1172,3 +1172,179 @@ textarea:focus {
   object-fit:cover;
   border-radius:10px;
 }
+
+/* ===== BHAGWA PREMIUM THEME ===== */
+
+body{
+  background:#0d0905 !important;
+  color:#ffffff !important;
+  background-image:
+  radial-gradient(circle at top right, rgba(255,140,0,.25), transparent 35%),
+  radial-gradient(circle at bottom left, rgba(255,120,0,.15), transparent 40%);
+}
+
+.site-header{
+  background:rgba(20,10,0,.95) !important;
+  border:1px solid #ff8c00 !important;
+  box-shadow:0 0 25px rgba(255,140,0,.35) !important;
+}
+
+.brand-name{
+  color:#ff9d00 !important;
+}
+
+.brand-tagline{
+  color:#ffd28a !important;
+}
+
+.site-nav a{
+  color:#ffffff !important;
+}
+
+.site-nav a:hover{
+  color:#ff9d00 !important;
+}
+
+.hero{
+  background:linear-gradient(135deg,#1a0f05,#2d1806) !important;
+  border:1px solid #ff8c00 !important;
+  border-radius:20px !important;
+  box-shadow:0 0 35px rgba(255,140,0,.25) !important;
+}
+
+.hero h1{
+  color:#ffffff !important;
+  font-weight:900 !important;
+}
+
+.hero-text{
+  color:#f3d7aa !important;
+}
+
+.shop-window{
+  background:#1a1007 !important;
+  border:1px solid #ff8c00 !important;
+}
+
+.window-head strong{
+  color:#ff9d00 !important;
+}
+
+.window-head span{
+  color:#f3d7aa !important;
+}
+
+.quick-stats div{
+  background:#1a1007 !important;
+  border:1px solid rgba(255,140,0,.4) !important;
+}
+
+.quick-stats strong{
+  color:#ff9d00 !important;
+}
+
+.quick-stats span{
+  color:#f3d7aa !important;
+}
+
+.category-strip a{
+  background:#1a1007 !important;
+  color:#ffffff !important;
+  border:1px solid #ff8c00 !important;
+}
+
+.category-strip a:hover{
+  background:#ff8c00 !important;
+  color:#000000 !important;
+}
+
+.product-card{
+  background:#1a1007 !important;
+  color:#ffffff !important;
+  border:1px solid #ff8c00 !important;
+  box-shadow:0 0 15px rgba(255,140,0,.15);
+}
+
+.product-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 25px rgba(255,140,0,.35);
+}
+
+.product-card h3{
+  color:#ffb347 !important;
+}
+
+.product-card p{
+  color:#f3d7aa !important;
+}
+
+.product-tag{
+  background:#ff8c00 !important;
+  color:#000000 !important;
+  border:none !important;
+}
+
+.offer-band{
+  background:linear-gradient(135deg,#ff8c00,#cc6f00) !important;
+}
+
+.steps article{
+  background:#1a1007 !important;
+  border:1px solid #ff8c00 !important;
+  color:#ffffff !important;
+}
+
+.about{
+  border-top:1px solid #ff8c00 !important;
+  border-bottom:1px solid #ff8c00 !important;
+}
+
+.contact-form{
+  background:#1a1007 !important;
+  border:1px solid #ff8c00 !important;
+}
+
+input,
+textarea{
+  background:#0f0a05 !important;
+  color:#ffffff !important;
+  border:1px solid #ff8c00 !important;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color:#cccccc;
+}
+
+.site-footer{
+  border-top:1px solid #ff8c00 !important;
+  color:#f3d7aa !important;
+}
+
+.footer-links a{
+  color:#ff9d00 !important;
+}
+
+.whatsapp-btn,
+.button.primary{
+  background:linear-gradient(135deg,#ff8c00,#cc6f00) !important;
+  color:#ffffff !important;
+}
+
+.button.secondary{
+  background:#1a1007 !important;
+  color:#ffffff !important;
+  border:1px solid #ff8c00 !important;
+}
+
+#products .product-card{
+  background:#1a1007 !important;
+  border:1px solid #ff8c00 !important;
+}
+
+#products .product-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+}
