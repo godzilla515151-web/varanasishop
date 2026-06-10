@@ -99,3 +99,21 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(card);
   });
 });
+
+const sheetURL = "https://opensheet.elk.sh/1uaUAyP4UB1A0PdM7kKGaX-9JtFC5CmHdE839nzQXNlU/Sheet1";
+
+fetch(sheetURL)
+  .then(res => res.json())
+  .then(data => {
+    const productsDiv = document.getElementById("products");
+
+    productsDiv.innerHTML = data.map(item => `
+      <div class="product-card">
+        <img src="${item['Photo URL']}" alt="${item['Product Name']}">
+        <h3>${item['Product Name']}</h3>
+        <p>${item.Category}</p>
+        <strong>₹${item.Price}</strong>
+      </div>
+    `).join("");
+  })
+  .catch(err => console.log(err));
