@@ -200,24 +200,29 @@ select {
 }
 
 /* ============ HERO ============ */
-.hero {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
-  align-items: center;
-  width: min(1200px, calc(100% - 32px));
-  min-height: 70vh;
-  margin: 40px auto;
-  padding: 60px 32px;
-  border-radius: 16px;
-  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-  url("GHAT.jpg");
+.hero{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:48px;
+    align-items:center;
 
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- box-shadow: var(--shadow-sm);
- }
+    width:min(1200px, calc(100% - 32px));
+    min-height:70vh;
+    margin:40px auto;
+    padding:60px 32px;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("GHAT.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 0 30px rgba(255,140,0,0.4);
+}
 
 .eyebrow {
   margin: 0 0 16px;
