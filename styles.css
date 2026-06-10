@@ -101,13 +101,26 @@ select {
   white-space: nowrap;
 }
 
-.brand-logo {
-  width: 65px;
-  height: 65px;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  background: rgba(13, 124, 121, 0.05);
+.brand-logo{
+width:110px;
+height:110px;
+object-fit:contain;
+border-radius:18px;
+
+background:#fff;
+padding:5px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.4),
+0 0 20px rgba(255,140,0,.6);
+
+transform:perspective(1000px) rotateY(-8deg);
+
+transition:all .3s ease;
+}
+
+.brand-logo:hover{
+transform:perspective(1000px) rotateY(0deg) scale(1.08);
 }
 
 .brand-text {
@@ -373,12 +386,26 @@ select {
   border-bottom: 2px solid var(--line);
 }
 
-.window-head img {
-  width: 70px;
-  height: 70px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: var(--shadow-sm);
+.window-head img{
+width:120px;
+height:120px;
+border-radius:18px;
+object-fit:cover;
+
+background:#fff;
+padding:5px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.4),
+0 0 20px rgba(255,140,0,.6);
+
+transform:perspective(1000px) rotateY(-8deg);
+
+transition:all .3s ease;
+}
+
+.window-head img:hover{
+transform:perspective(1000px) rotateY(0deg) scale(1.08);
 }
 
 .window-head strong,
