@@ -1235,7 +1235,8 @@ body{
 .hero{
 background:
 linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-url("GHAT.jpg") center/cover no-repeat !important;
+url("GHAT.png") center/cover no-repeat !important;
+}
 
 border:1px solid #ff8c00 !important;
 border-radius:20px !important;
