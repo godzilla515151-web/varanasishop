@@ -3,345 +3,171 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0d7c79">
     <title>VaranasiMart | Ghar Ka Har Zaroori Saman</title>
-    <meta
-      name="description"
-      content="VaranasiMart - Varanasi ke sabse bade online store me milega grocery, tel, sabun, khane ke items, juta chappal, kitchen, cleaning, pooja aur household products. Fast delivery, best prices!"
-    >
+    <meta name="description" content="VaranasiMart - Varanasi ke sabse bade online store me milega grocery, tel, sabun, khane ke items, juta chappal, kitchen, cleaning, pooja aur household products. Fast delivery, best prices!">
     <meta name="keywords" content="varanasi, grocery, online shopping, tel, sabun, household items">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- Top Bar -->
     <div class="top-bar">
       <span>🚚 Varanasi me fast delivery</span>
       <span>📦 Grocery • Tel • Sabun • Kitchen • Household</span>
       <span>📞 customer care: 916391608068 </span>
     </div>
 
+    <!-- Header -->
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="VaranasiMart home">
+      <a class="brand" href="#home">
         <img class="brand-logo" src="logo.png" alt="VaranasiMart Logo">
         <div class="brand-text">
           <h1 class="brand-name">VaranasiMart</h1>
           <p class="brand-tagline">Ghar Ka Saman Online</p>
         </div>
       </a>
-      <button class="menu-button" type="button" aria-label="Menu kholein" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation">
+      <nav class="site-nav">
         <a href="#catalog">🛍️ Catalog</a>
         <a href="#offers">⭐ Offers</a>
         <a href="#delivery">🚚 Delivery</a>
         <a href="#contact">📱 Order</a>
       </nav>
-      <a href="https://wa.me/916391608068" target="_blank" class="whatsapp-btn" title="WhatsApp par order karein">
-        💬 WhatsApp
-      </a>
+      <a href="https://wa.me/916391608068" target="_blank" class="whatsapp-btn">💬 WhatsApp</a>
     </header>
 
-    <main id="home">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">✨ Varanasi Ka Sabse Aasan Online Store</p>
-          <h1>VaranasiMart - Ghar Ka Har Saman Ek Jagah</h1>
-          <p class="hero-text">
-            Tel, sabun, khane ka saman, kitchen products, cleaning items, pooja saman - sab kuch ek hi website par! 
-            Best prices, fast delivery, quality guaranteed.
-          </p>
-          <form class="search-box" action="#catalog">
-            <input type="search" placeholder="Tel, sabun, atta, chappal dhundho..." aria-label="Search products">
-            <button type="submit">🔍 Search</button>
-          </form>
-          <div class="hero-actions">
-            <a class="button primary" href="#catalog">🛒 Catalog Dekho</a>
-            <a class="button secondary" href="#contact">📝 Order Inquiry</a>
-          </div>
-        </div>
-        <aside class="shop-window" aria-label="Featured shop preview">
-          <div class="window-head">
-            <img src="logo.png" alt="VaranasiMart Logo">
-            <div>
-              <strong>VaranasiMart</strong>
-              <span>📍 Varanasi, Uttar Pradesh</span>
-              <span style="font-size: 0.8rem; color: #27ae60; margin-top: 4px;">✓ Verified Seller</span>
-            </div>
-          </div>
-          <div class="shelf">
-            <span class="pack oil"></span>
-            <span class="pack soap"></span>
-            <span class="pack food"></span>
-            <span class="pack footwear"></span>
-          </div>
-          <div class="deal-card">
-            <span>🔥 Aaj Ka Offer</span>
-            <strong>Monthly Combo Bundle</strong>
-            <small>Ration + Cleaning + Bathroom = Best Price</small>
-          </div>
-        </aside>
-      </section>
-
-      <section class="quick-stats" aria-label="Shop highlights">
-        <div>
-          <strong>15+</strong>
-          <span>Product Categories</span>
-        </div>
-        <div>
-          <strong>100%</strong>
-          <span>Quality Guaranteed</span>
-        </div>
-        <div>
-          <strong>⚡ Fast</strong>
-          <span>Quick Delivery</span>
-        </div>
-        <div>
-          <strong>💰 Best</strong>
-          <span>Market Prices</span>
-        </div>
-      </section>
-
-      <section class="category-strip" aria-label="Quick categories">
-        <a href="#catalog">🛢️ Tel</a>
-        <a href="#catalog">🧼 Sabun</a>
-        <a href="#catalog">🍚 Grocery</a>
-        <a href="#catalog">👟 Chappal</a>
-        <a href="#catalog">🍳 Kitchen</a>
-        <a href="#catalog">🧹 Cleaning</a>
-        <a href="#catalog">🚿 Bathroom</a>
-        <a href="#catalog">🙏 Pooja</a>
-        <a href="#catalog">📦 Storage</a>
-        <a href="#catalog">✨ Decor</a>
-      </section>
-
-      <section class="section" id="catalog">
-        <div class="section-heading">
-          <p class="eyebrow">📦 PURI CATALOG</p>
-          <h2>Varanasi ke har ghar ke liye saman ek jagah!</h2>
-          <p>15+ categories me 100+ products. Best quality, best prices. Order karein, home deliver hoga!</p>
-        </div>
-        <div class="catalog-layout">
-          <aside class="filter-panel" aria-label="Catalog categories">
-            <h3>Categories</h3>
-            <a href="#daily">Daily Needs</a>
-            <a href="#grocery">Grocery & Food</a>
-            <a href="#care">Soap & Care</a>
-            <a href="#home">Home Utility</a>
-            <a href="#footwear">Footwear</a>
-            <a href="#combo">Bundles</a>
-          </aside>
-          <div class="product-grid">
-            <article class="product-card" id="daily">
-              <span class="product-visual oil"><i></i></span>
-              <span class="product-tag">🛢️ Tel</span>
-              <h3>Cooking Oil & Hair Oil</h3>
-              <p>Mustard oil, refined oil, coconut oil, hair oil - sab milega best quality me!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card" id="care">
-              <span class="product-visual soap"><i></i></span>
-              <span class="product-tag">🧼 Sabun</span>
-              <h3>Soap, Shampoo & Detergent</h3>
-              <p>Bath soap, washing soap, detergent powder, handwash, toothpaste - family ke liye complete!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card" id="grocery">
-              <span class="product-visual food"><i></i></span>
-              <span class="product-tag">🍚 Grocery</span>
-              <h3>Atta, Chawal, Dal & Masale</h3>
-              <p>Roz ke khane-pine ka saman - quality aur freshness guaranteed!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card" id="footwear">
-              <span class="product-visual footwear"><i></i></span>
-              <span class="product-tag">👟 Chappal</span>
-              <h3>Shoes, Slippers & Sandals</h3>
-              <p>Men, women, kids - sab size aur types available!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card">
-              <span class="product-visual kitchen"><i></i></span>
-              <span class="product-tag">🍳 Kitchen</span>
-              <h3>Bartan, Bottle & Lunch Box</h3>
-              <p>Steel bottle, tiffin, cooking tools - kitchen ke liye sab kuch!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card" id="home">
-              <span class="product-visual cleaning"><i></i></span>
-              <span class="product-tag">🧹 Cleaning</span>
-              <h3>Mop, Wiper, Brush & Duster</h3>
-              <p>Ghar ki safai ke liye sab kuch - professional quality!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card">
-              <span class="product-visual bathroom"><i></i></span>
-              <span class="product-tag">🚿 Bathroom</span>
-              <h3>Bucket, Mug & Soap Case</h3>
-              <p>Bathroom ke liye quality products - affordable prices!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card">
-              <span class="product-visual storage"><i></i></span>
-              <span class="product-tag">📦 Storage</span>
-              <h3>Storage Boxes & Organizers</h3>
-              <p>Space save karein organized tarike se!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card">
-              <span class="product-visual pooja"><i></i></span>
-              <span class="product-tag">🙏 Pooja</span>
-              <h3>Pooja & Festival Items</h3>
-              <p>Diya, agarbatti, pooja saman - festival ready ho jao!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card">
-              <span class="product-visual decor"><i></i></span>
-              <span class="product-tag">✨ Decor</span>
-              <h3>Home Decor & Gifts</h3>
-              <p>Ghar ko beautiful banao affordable prices me!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card">
-              <span class="product-visual daily"><i></i></span>
-              <span class="product-tag">⭐ Daily</span>
-              <h3>All Daily Items</h3>
-              <p>Ghar me roz kaam aane wale sab products ek jagah!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-            <article class="product-card" id="combo">
-              <span class="product-visual combo"><i></i></span>
-              <span class="product-tag">🎁 Bundle</span>
-              <h3>Monthly Combo Pack</h3>
-              <p>Tel, sabun, grocery, cleaning - sab kuch ek saath best price pe!</p>
-              <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="offers">
-        <div class="offer-band">
-          <div>
-            <p class="eyebrow">🔥 SPECIAL OFFERS</p>
-            <h2>Monthly Combo Bundles - Best Price!</h2>
-            <p>Tel, sabun, grocery, cleaning, bathroom - sab kuch ek order me. Delivery Varanasi me kahin bhi!</p>
-          </div>
-          <a class="button primary" href="#contact">📝 Combo Order Karein</a>
-        </div>
-      </section>
-
-      <section class="section service-panel" id="delivery">
-        <div>
-          <p class="eyebrow">🚚 DELIVERY PROCESS</p>
-          <h2>Kitna Simple Hai Order Karna!</h2>
-        </div>
-        <div class="steps">
-          <article>
-            <strong>1</strong>
-            <span>📝 Product aur quantity bhejo</span>
-          </article>
-          <article>
-            <strong>2</strong>
-            <span>💰 Price confirm hogi</span>
-          </article>
-          <article>
-            <strong>3</strong>
-            <span>🚚 Home pe delivery!</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section about" id="about">
-        <div>
-          <p class="eyebrow">ℹ️ ABOUT VARANASIMART</p>
-          <h2>Varanasi ke liye online shopping simple karte hain!</h2>
-        </div>
-        <p>
-          VaranasiMart Vinit Singh ke dwara Varanasi me groceries, household items, kitchen products - 
-          sabhi kuch online deliver karne ke liye shuru kiya gaya. 
-          Humara goal hai ghar baithkar apna saara saman order kar sako best prices pe!
-        </p>
-      </section>
-
-      <section class="contact-band" id="contact">
-        <div>
-          <p class="eyebrow">📱 ORDER INQUIRY</p>
-          <h2>Apna Order Place Karo Abhi!</h2>
-          <p>Product ka naam, quantity, size/brand, aur delivery area likhna. Hum 24 ghante me reply karenge!</p>
-          <div style="margin-top: 20px;">
-            <a href="https://wa.me/919453xxxxxx" target="_blank" class="button primary" style="display: inline-flex; gap: 8px;">
-              💬 WhatsApp par Direct Order Karo
-            </a>
-          </div>
-        </div>
-        <form class="contact-form">
-          <label>
-            Aapka Naam
-            <input type="text" name="name" placeholder="Vinit Singh" required>
-          </label>
-          <label>
-            Phone ya Email
-            <input type="text" name="contact" placeholder="9876543210 ya email@gmail.com" required>
-          </label>
-          <label>
-            Order Details
-            <textarea name="message" rows="5" placeholder="Example: Tel 1 litre, sabun 4 pcs, atta 5kg, chappal size 8, delivery area ka naam..." required></textarea>
-          </label>
-          <button class="button primary" type="submit">✅ Inquiry Submit Karo</button>
-          <a class="button secondary" href="mailto:godzilla515151@gmail.com?subject=VaranasiMart%20Order%20Inquiry">📧 Email se bhejo</a>
-          <p class="form-note" role="status"></p>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">✨ Varanasi Ka Sabse Aasan Online Store</p>
+        <h1>VaranasiMart - Ghar Ka Har Saman Ek Jagah</h1>
+        <p class="hero-text">Tel, sabun, khane ka saman, kitchen products, cleaning items, pooja saman - sab kuch ek hi website par!</p>
+        <form class="search-box" action="#catalog">
+          <input type="search" placeholder="Tel, sabun, atta, chappal dhundho...">
+          <button type="submit">🔍 Search</button>
         </form>
-      </section>
-        <section id="catalog">
-          <h2>Our Products</h2>
-          <div id="products"></div>
-</section>
-      
-    </main>
+        <div class="hero-actions">
+          <a class="button primary" href="#catalog">🛒 Catalog Dekho</a>
+          <a class="button secondary" href="#contact">📝 Order Inquiry</a>
+        </div>
+      </div>
+      <aside class="shop-window">
+        <div class="window-head">
+          <img src="logo.png" alt="VaranasiMart Logo">
+          <div>
+            <strong>VaranasiMart</strong>
+            <span>📍 Varanasi, Uttar Pradesh</span>
+            <span style="color:#27ae60;">✓ Verified Seller</span>
+          </div>
+        </div>
+        <div class="shelf">
+          <span class="pack oil"></span>
+          <span class="pack soap"></span>
+          <span class="pack food"></span>
+          <span class="pack footwear"></span>
+        </div>
+        <div class="deal-card">
+          <span>🔥 Aaj Ka Offer</span>
+          <strong>Monthly Combo Bundle</strong>
+          <small>Ration + Cleaning + Bathroom = Best Price</small>
+        </div>
+      </aside>
+    </section>
 
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+      <div><strong>15+</strong><span>Product Categories</span></div>
+      <div><strong>100%</strong><span>Quality Guaranteed</span></div>
+      <div><strong>⚡ Fast</strong><span>Quick Delivery</span></div>
+      <div><strong>💰 Best</strong><span>Market Prices</span></div>
+    </section>
+
+    <!-- Catalog -->
+    <section class="section" id="catalog">
+      <div class="section-heading">
+        <p class="eyebrow">📦 PURI CATALOG</p>
+        <h2>Varanasi ke har ghar ke liye saman ek jagah!</h2>
+      </div>
+      <div class="catalog-layout">
+        <aside class="filter-panel">
+          <h3>Categories</h3>
+          <a href="#daily">Daily Needs</a>
+          <a href="#grocery">Grocery & Food</a>
+          <a href="#care">Soap & Care</a>
+          <a href="#home">Home Utility</a>
+          <a href="#footwear">Footwear</a>
+          <a href="#combo">Bundles</a>
+        </aside>
+        <div class="product-grid">
+          <!-- Example Product -->
+          <article class="product-card" id="daily">
+            <span class="product-visual oil"><i></i></span>
+            <span class="product-tag">🛢️ Tel</span>
+            <h3>Cooking Oil & Hair Oil</h3>
+            <p>Mustard oil, refined oil, coconut oil, hair oil - sab milega best quality me!</p>
+            <div class="price-row"><strong>Price par inquiry</strong><a href="#contact">Order</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="section" id="offers">
+      <div class="offer-band">
+        <div>
+          <p class="eyebrow">🔥 SPECIAL OFFERS</p>
+          <h2>Monthly Combo Bundles - Best Price!</h2>
+          <p>Tel, sabun, grocery, cleaning, bathroom - sab kuch ek order me.</p>
+        </div>
+        <a class="button primary" href="#contact">📝 Combo Order Karein</a>
+      </div>
+    </section>
+
+    <!-- Delivery -->
+    <section class="section service-panel" id="delivery">
+      <div><p class="eyebrow">🚚 DELIVERY PROCESS</p><h2>Kitna Simple Hai Order Karna!</h2></div>
+      <div class="steps">
+        <article><strong>1</strong><span>📝 Product aur quantity bhejo</span></article>
+        <article><strong>2</strong><span>💰 Price confirm hogi</span></article>
+        <article><strong>3</strong><span>🚚 Home pe delivery!</span></article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div><p class="eyebrow">ℹ️ ABOUT VARANASIMART</p><h2>Varanasi ke liye online shopping simple karte hain!</h2></div>
+      <p>VaranasiMart Vinit Singh ke dwara Varanasi me groceries, household items, kitchen products - sabhi kuch online deliver karne ke liye shuru kiya gaya.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-band" id="contact">
+      <div>
+        <p class="eyebrow">📱 ORDER INQUIRY</p>
+        <h2>Apna Order Place Karo Abhi!</h2>
+        <p>Product ka naam, quantity, size/brand, aur delivery area likhna.</p>
+        <a href="https://wa.me/919453xxxxxx" target="_blank" class="button primary">💬 WhatsApp par Direct Order Karo</a>
+      </div>
+      <form class="contact-form">
+        <label>Aapka Naam<input type="text" name="name" required></label>
+        <label>Phone ya Email<input type="text" name="contact" required></label>
+        <label>Order Details<textarea name="message" rows="5" required></textarea></label>
+        <button class="button primary" type="submit">✅ Inquiry Submit Karo</button>
+      </form>
+    </section>
+
+    <!-- Dynamic Products -->
+    <section id="catalog">
+      <h2>Our Products</h2>
+      <div id="products"></div>
+    </section>
+
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-content">
         <span>&copy; <span id="year"></span> VaranasiMart | Varanasi Online Store</span>
-        <div style="margin-top: 12px; font-size: 0.9rem;">
-          <p>📧 Email: godzilla515151@gmail.com</p>
-          <p>📞 Phone: 916391608068</p>
-          <p>📍 Varanasi, Uttar Pradesh</p>
-        </div>
+        <p>📧 Email: godzilla515151@gmail.com</p>
+        <p>📞 Phone: 916391608068</p>
       </div>
       <div class="footer-links">
         <a href="#home">Home</a>
         <a href="#catalog">Catalog</a>
         <a href="#contact">Contact</a>
-        <a href="https://wa.me/9163916068" target="_blank">WhatsApp</a>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-    
-<script>
-const sheetURL =
-"https://opensheet.elk.sh/1uaUAyP4UB1A0PdM7kKGaX-9JtFC5CmHdE839nzQXNlU/Sheet1";
-
-fetch(sheetURL)
-  .then(res => res.json())
-  .then(data => {
-    let html = "";
-
-    data.forEach(product => {
-      html += `
-      <div class="product-card">
-        <img src="${product['Photo URL']}" alt="${product['Product Name']}">
-        <h3>${product['Product Name']}</h3>
-        <p>₹${product['Price']}</p>
-        <small>${product['Category']}</small>
-      </div>`;
-    });
-
-    document.getElementById("products").innerHTML = html;
-  });
-</script>
-
-</body>
-</html>
+        <a href="https://wa
