@@ -1232,10 +1232,11 @@ body{
   color:#ff9d00 !important;
 }
 
-.hero{
-background:
-linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-url("ghat.png") center/cover no-repeat !important;
+..hero {
+  background: url("3D-VaranasiMart.png") center/cover no-repeat;
+  background-attachment: fixed;
+  border: none;
+  box-shadow: none;
 }
 
 border:1px solid #ff8c00 !important;
