@@ -498,9 +498,18 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
 }
 
 .quick-stats div {
-  padding: 28px;
-  background: var(--surface);
-  transition: all 200ms ease;
+    padding: 10px;
+    min-height: 70px;
+    background: var(--surface);
+    transition: all 200ms ease;
+}
+
+.quick-stats strong{
+    font-size:1.4rem !important;
+}
+
+.quick-stats span{
+    font-size:0.85rem !important;
 }
 
 .quick-stats div:hover {
