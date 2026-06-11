@@ -509,15 +509,11 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
 
 .quick-stats strong {
   display: block;
-  color: #ff9d00;
+  color: var(--accent-dark);
   font-size: 2rem;
   font-weight: 900;
   line-height: 1;
   margin-bottom: 8px;
-
-  text-shadow:
-    0 0 8px rgba(255,140,0,.8),
-    0 0 15px rgba(255,140,0,.5);
 }
 
 .quick-stats span {
