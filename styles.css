@@ -286,7 +286,7 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
 .search-box {
   display: grid;
   grid-template-columns: 1fr auto;
-  max-width: 580px;
+  max-width: 500px;
   margin-top: 32px;
   padding: 8px;
   border: 2px solid var(--line);
