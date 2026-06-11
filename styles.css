@@ -1446,3 +1446,20 @@ font-weight:800;
 color:#fff;
 text-shadow:0 2px 5px rgba(0,0,0,.5);
 }
+.trust-bar{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin:30px auto;
+width:min(1200px,calc(100% - 32px));
+}
+
+.trust-bar div{
+background:#1a1007;
+border:1px solid #ff8c00;
+padding:15px;
+text-align:center;
+border-radius:12px;
+color:#fff;
+font-weight:700;
+}
