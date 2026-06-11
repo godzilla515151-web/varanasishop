@@ -486,7 +486,7 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
 /* ============ QUICK STATS ============ */
 .quick-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1px;
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto 40px;
