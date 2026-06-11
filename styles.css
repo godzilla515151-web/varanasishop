@@ -1237,8 +1237,8 @@ background:
 linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
 url("ghat.png");
 
-background-size: 100% 100%;
-background-position: center;
+background-size: cover;
+background-position: center center;
 background-repeat: no-repeat;
 
 min-height: 750px;
