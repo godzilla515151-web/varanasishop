@@ -1504,3 +1504,91 @@ line-height:1.5;
 color:#ff9d00;
 font-size:15px;
 }
+/* Premium Gradient Buttons */
+.button.primary {
+  background: linear-gradient(90deg, #ff8c00, #ffb347);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+}
+.button.primary:hover {
+  box-shadow: 0 0 15px rgba(255,140,0,0.6);
+  transform: translateY(-2px);
+}
+
+/* Transparent Navbar with Glow */
+.site-header {
+  background: rgba(20,10,0,0.85);
+  border: 1px solid #ff8c00;
+  box-shadow: 0 0 25px rgba(255,140,0,0.35);
+}
+.site-nav a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.site-nav a:hover {
+  color: #ffb347;
+  text-shadow: 0 0 8px rgba(255,180,70,0.8);
+}
+
+/* Hero Section Overlay */
+.hero {
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Text Animations */
+.hero-copy h1 {
+  animation: fadeUp 1.2s ease forwards;
+}
+.hero-text {
+  animation: fadeUp 1.6s ease forwards;
+}
+.hero-actions {
+  animation: fadeUp 2s ease forwards;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Offer Carousel (basic fade effect) */
+.offer-band {
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+@keyframes fadeIn {
+  from { opacity: 0.7; }
+  to { opacity: 1; }
+}
+
+/* Footer Social Icons */
+.footer-links a {
+  margin: 0 8px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer-links a:hover {
+  color: #ffb347;
+  text-shadow: 0 0 10px rgba(255,180,70,0.8);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .hero { background-position: center top; }
+  .hero-copy h1 { font-size: 1.6rem; }
+  .site-nav { flex-wrap: wrap; gap: 8px; }
+  .product-card { flex: 1 1 100%; }
+}
+
