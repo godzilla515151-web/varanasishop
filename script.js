@@ -137,3 +137,45 @@ window.open(
 '_blank'
 );
 });
+
+let cart = [];
+
+function addToCart(product){
+
+cart.push(product);
+
+document.getElementById("cart-count").innerText = cart.length;
+
+renderCart();
+}
+
+function renderCart(){
+
+let html = "";
+
+cart.forEach(item => {
+
+html += `
+<div style="padding:10px;border:1px solid orange;margin:10px 0;border-radius:10px;">
+${item}
+</div>
+`;
+
+});
+
+document.getElementById("cart-items").innerHTML = html;
+}
+
+function checkoutWhatsApp(){
+
+let text = "Namaste, mujhe ye products order karne hain:%0A%0A";
+
+cart.forEach(item => {
+text += "• " + item + "%0A";
+});
+
+window.open(
+"https://wa.me/916391608068?text=" + text,
+"_blank"
+);
+}
