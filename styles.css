@@ -1232,7 +1232,7 @@ body{
   color:#ff9d00 !important;
 }
 
-..hero {
+ .hero {
   background: url("3D-VaranasiMart.png") center/cover no-repeat;
   background-attachment: fixed;
   border: none;
