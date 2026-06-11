@@ -1495,3 +1495,12 @@ line-height:1.5;
 color:#ff9d00;
 font-size:15px;
 }
+
+.premium{
+  color:#ffb347;
+  font-weight:900;
+  font-size:1.6rem;
+  text-shadow:
+  0 0 8px #ff8c00,
+  0 0 15px #ff8c00;
+}
