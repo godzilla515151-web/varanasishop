@@ -370,7 +370,7 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
 }
 
 .shop-window {
-  padding: 24px;
+  padding: 18px;
   border: 2px solid var(--line);
   border-radius: 16px;
   background: var(--surface);
@@ -968,11 +968,10 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: auto;
-    padding: 40px 32px;
-  }
-
+  ..hero {
+  min-height: 520px;
+  padding: 20px 20px;
+}
   .filter-panel {
     position: static;
     display: flex;
@@ -1070,10 +1069,10 @@ textarea:focus {
   }
 
   .hero {
-    min-height: auto;
-    padding: 30px 16px;
-    gap: 24px;
-  }
+  min-height: 450px;
+  padding: 20px 20px;
+  gap: 16px;
+}
 
   .hero h1 {
     font-size: 1.6rem;
@@ -1158,7 +1157,7 @@ textarea:focus {
   }
 
   .search-box {
-    max-width: 100%;
+    max-width: 500px;
   }
 
   .section h2 {
