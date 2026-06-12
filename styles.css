@@ -1504,3 +1504,10 @@ line-height:1.5;
 color:#ff9d00;
 font-size:15px;
 }
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(6px);
+}
