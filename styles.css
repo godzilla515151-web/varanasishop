@@ -1557,13 +1557,14 @@ font-size:15px;
   background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), transparent 100%);
   cursor: pointer;
 }
-.delivery-area{
+..delivery-area{
   text-align:center;
-  padding:25px;
-  margin:20px auto;
-  border:1px solid rgba(255,140,0,.3);
-  border-radius:15px;
-  background:rgba(255,140,0,.05);
+  padding:15px;
+  margin:15px auto;
+  border:1px solid rgba(255,140,0,.2);
+  border-radius:12px;
+  background:rgba(255,140,0,.03);
+  max-width:700px;
 }
 
 .delivery-area h2{
@@ -1576,13 +1577,8 @@ font-size:15px;
   font-weight:600;
 }
 .offer-banner{
-  margin:20px auto;
-  padding:15px;
-  text-align:center;
-  font-weight:700;
-  font-size:1.1rem;
-  color:#fff;
-  background:linear-gradient(90deg,#ff8c00,#ffb347);
-  border-radius:12px;
-  box-shadow:0 0 20px rgba(255,140,0,.4);
+  margin:15px auto;
+  padding:10px;
+  font-size:0.95rem;
+  max-width:900px;
 }
