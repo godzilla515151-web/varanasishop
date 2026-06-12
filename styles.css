@@ -1532,3 +1532,28 @@ font-size:15px;
 .whatsapp-float:hover{
   transform:scale(1.1);
 }
+.trust-badges {
+  display: flex;
+  justify-content: space-around; /* या space-between, ज़रूरत अनुसार */
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  background: var(--ink);
+  border-radius: 12px;
+}
+
+.trust-card {
+  background: var(--surface);
+  color: var(--ink);
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  flex: 1 1 200px; /* कार्ड को एक छोटा आकार दो और बराबर स्पेस दो */
+  text-align: center;
+}
+
+.trust-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), transparent 100%);
+  cursor: pointer;
+}
