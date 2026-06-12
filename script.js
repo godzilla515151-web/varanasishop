@@ -133,7 +133,7 @@ Order Details:
 ${message}`;
 
 window.open(
-'https://wa.me/91916391608068?text=' + encodeURIComponent(text),
+'https://wa.me/916391608068?text=' + encodeURIComponent(text),
 '_blank'
 );
 });
