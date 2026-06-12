@@ -1557,3 +1557,21 @@ font-size:15px;
   background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), transparent 100%);
   cursor: pointer;
 }
+.delivery-area{
+  text-align:center;
+  padding:25px;
+  margin:20px auto;
+  border:1px solid rgba(255,140,0,.3);
+  border-radius:15px;
+  background:rgba(255,140,0,.05);
+}
+
+.delivery-area h2{
+  color:#ffb347;
+  margin-bottom:10px;
+}
+
+.delivery-area p{
+  color:#ddd;
+  font-weight:600;
+}
