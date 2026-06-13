@@ -219,7 +219,9 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
     gap:48px;
     align-items:center;
 
-    width:min(1200px, calc(100% - 32px));
+    width:100%;
+    max-width:1200px;
+   
     min-height:70vh;
     margin:40px auto;
     padding:60px 32px;
@@ -235,7 +237,10 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
     background-repeat:no-repeat;
 
     box-shadow:0 0 30px rgba(255,140,0,0.4);
+  
+   overflow:hidden;
 }
+
 
 .eyebrow {
   margin: 0 0 16px;
@@ -1595,4 +1600,13 @@ font-size:15px;
   box-shadow: 0 0 10px rgba(255,140,0,.3);
 
   text-align: center;
+}
+@media (max-width:768px){
+
+  .hero{
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:20px;
+  }
+
 }
