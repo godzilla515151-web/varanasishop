@@ -1579,8 +1579,23 @@ font-size:15px;
   font-size: 1rem;
 }
 .offer-banner{
-  margin:15px auto;
-  padding:10px;
-  font-size:0.95rem;
-  max-width:900px;
+  width: fit-content;
+  margin: 25px auto;
+  padding: 12px 30px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+
+  color: #fff;
+
+  background: linear-gradient(90deg,#ff8c00,#ffb347);
+
+  border: 2px solid #ffb347;
+  border-radius: 50px;
+
+  box-shadow:
+    0 0 15px rgba(255,140,0,.5),
+    0 0 30px rgba(255,140,0,.3);
+
+  text-align: center;
 }
