@@ -538,11 +538,14 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
 
 /* ============ CATEGORY STRIP ============ */
 .category-strip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  width: min(1200px, calc(100% - 32px));
-  margin: 0 auto 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 32px;
 }
 
 .category-strip a,
@@ -1609,4 +1612,32 @@ font-size:15px;
     padding:20px;
   }
 
+}
+@media (max-width:768px){
+
+  .category-strip{
+    justify-content:center;
+    padding:0 10px;
+  }
+
+  .category-strip a{
+    font-size:0.8rem;
+    padding:8px 12px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .hero,
+  .quick-stats,
+  .category-strip,
+  .delivery-area{
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  body{
+    overflow-x:hidden;
+  }
 }
