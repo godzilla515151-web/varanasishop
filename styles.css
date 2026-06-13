@@ -81,7 +81,8 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  width: min(1200px, calc(100% - 32px));
+  width:100%;
+  max-width:1200px;
   margin: 16px auto 0;
   padding: 12px 16px;
   border: 2px solid var(--accent);
@@ -493,7 +494,8 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1px;
-  width: min(1200px, calc(100% - 32px));
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto 40px;
   overflow: hidden;
   border: 2px solid var(--line);
@@ -575,7 +577,8 @@ transform:perspective(1000px) rotateY(0deg) scale(1.08);
 /* ============ SECTIONS ============ */
 .section,
 .contact-band {
-  width: min(1200px, calc(100% - 32px));
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 80px 0;
 }
@@ -943,7 +946,8 @@ textarea:focus {
   grid-template-columns: 1fr auto;
   gap: 32px;
   align-items: start;
-  width: min(1200px, calc(100% - 32px));
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 0;
   color: var(--muted);
@@ -1020,7 +1024,8 @@ textarea:focus {
   }
 
   .site-header {
-    width: min(100% - 16px, 1200px);
+    width: 100%;
+   max-width: 1200px;
   }
 
   .site-footer {
@@ -1123,7 +1128,8 @@ textarea:focus {
   }
 
   .category-strip {
-    width: min(100% - 16px, 1200px);
+    width: 100%;
+    max-width: 1200px;
   }
 
   .contact-band {
@@ -1154,7 +1160,8 @@ textarea:focus {
   .section,
   .contact-band,
   .site-footer {
-    width: min(100% - 16px, 1200px);
+    width: 100%;
+    max-width: 1200px;
   }
 
   .hero h1 {
@@ -1474,7 +1481,8 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:15px;
 margin:30px auto;
-width:min(1200px,calc(100% - 32px));
+width: 100%;
+max-width: 1200px;
 }
 
 .trust-bar div{
