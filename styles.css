@@ -1580,22 +1580,19 @@ font-size:15px;
 }
 .offer-banner{
   width: fit-content;
-  margin: 25px auto;
-  padding: 12px 30px;
+  margin: 20px auto;
+  padding: 8px 20px;
 
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-size: 0.95rem;
+  font-weight: 600;
 
   color: #fff;
 
   background: linear-gradient(90deg,#ff8c00,#ffb347);
 
-  border: 2px solid #ffb347;
-  border-radius: 50px;
+  border-radius: 30px;
 
-  box-shadow:
-    0 0 15px rgba(255,140,0,.5),
-    0 0 30px rgba(255,140,0,.3);
+  box-shadow: 0 0 10px rgba(255,140,0,.3);
 
   text-align: center;
 }
