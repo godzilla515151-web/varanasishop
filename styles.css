@@ -1746,20 +1746,7 @@ font-size:15px;
     overflow-x:hidden !important;
   }
 }
-.trust-box{
-    margin:20px auto;
-    padding:20px;
-    max-width:800px;
-    border:1px solid #ff8c00;
-    border-radius:12px;
-    background:rgba(255,140,0,0.08);
-    text-align:center;
-}
 
-.trust-box h3{
-    color:#ffb347;
-    margin-bottom:12px;
-}
 .footer-links h3{
     color:#ffb347;
     margin-bottom:10px;
