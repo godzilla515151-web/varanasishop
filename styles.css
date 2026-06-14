@@ -1752,3 +1752,14 @@ font-size:15px;
     margin-bottom:10px;
     font-size:1.1rem;
 }
+.trust-line{
+    text-align:center;
+    margin:15px auto;
+    padding:10px;
+    color:#ffd280;
+    font-weight:700;
+    border:1px solid rgba(255,140,0,.3);
+    border-radius:10px;
+    background:rgba(255,140,0,.08);
+    width:min(1200px, calc(100% - 32px));
+}
